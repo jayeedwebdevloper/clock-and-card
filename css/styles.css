@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #0000009d !important;
+    font-size: 20px;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.nav-link:hover {
+    color: #4cb1ca !important;
+}
+
+#cart-count {
+    background: rgb(221, 8, 8) !important;
+    width: 5px;
+    height: 1px;
+    padding: 0 3px;
+    color: #fff;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.slide-card {
+    padding-top: 15%;
+    padding-left: 10%;
+}
+
+.responsiveP img {
+    height: 300px;
+}
+
+#product1,
+#product2,
+#product3 {
+    display: none;
+    background: #fff;
+    padding: 1% 2%;
+    box-shadow: 0 0 4px #000;
+    border-radius: 10px;
+    height: 270px;
+    margin: 2% 0;
+}
+
+#close1,
+#close2,
+#close3 {
+    cursor: pointer;
+}
+
+#confirm {
+    display: none;
+}
+
+#list input {
+    text-align: center;
+    font-weight: bold;
+}
+.slider {
+    overflow: hidden;
+}
+
+#list button {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#list button#order {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+}
+
+.cart {
+    list-style: none;
+    width: 15%;
+}
+
+@media only screen and (max-width: 1200px) {
+    #list button#order {
+        margin-top: 35% !important;
+    }
+
+    #product1 img,
+    #product2 img,
+    #product3 img {
+        width: 75% !important;
+    }
+
+    #product1 h4,
+    #product2 h4,
+    #product3 h4 {
+        font-size: 18px;
+    }
+
+    #product1 h6,
+    #product2 h6,
+    #product3 h6 {
+        font-size: 14px;
+    }
+
+    #product1 h1,
+    #product2 h1,
+    #product3 h1 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    #product1,
+    #product2,
+    #product3 {
+        height: fit-content !important;
+    }
+
+    #product1 img,
+    #product2 img,
+    #product3 img {
+        width: 50% !important;
+    }
+
+    #list button#order {
+        margin-top: 0 !important;
+        margin-bottom: 4%;
+    }
+
+    #close1,
+    #close2,
+    #close3 {
+        display: none;
+    }
+
+    .responsiveP {
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+    }
+
+    .info {
+        margin: 0 !important;
+    }
+
+    .info h1 {
+        width: 100% !important;
+        display: block;
+    }
+}
