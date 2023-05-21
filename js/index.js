@@ -434,20 +434,20 @@ let email5 = document.getElementById('inputEmail5');
 let phone5 = document.getElementById('phone5');
 let address5 = document.getElementById('inputAddress5');
 let zip5 = document.getElementById('inputZip5');
-let order5 = document.getElementById('orderC5');
+let order5 = document.getElementById('order5');
 let confirm5 = document.getElementById('confirm5');
 let details5 = document.getElementById('orderD5');
 
 order5.addEventListener('click', function () {
-    if (email5.value == '' || phone5.value == '' || address5.value == '' || zip5.value == '') {
-        alert('Please Fill-Up The Form');
-        order5.setAttribute('disabled', true);
-    } else {
-        order5.removeAttribute('disabled');
-        confirm5.style.display = 'block';
-        details5.style.display = 'none';
-        this.style.display = 'none';
-    }
+    // if (email5.value == '' || phone5.value == '' || address5.value == '' || zip5.value == '') {
+    //     alert('Please Fill-Up The Form');
+    //     order5.setAttribute('disabled', true);
+    // } else {
+    //     order5.removeAttribute('disabled');
+    //     confirm5.style.display = 'block';
+    //     details5.style.display = 'none';
+    //     this.style.display = 'none';
+    // }
 });
 zip5.addEventListener('keyup', function () {
     order5.removeAttribute('disabled');
@@ -464,15 +464,15 @@ let confirm6 = document.getElementById('confirm6');
 let details6 = document.getElementById('orderD6');
 
 order6.addEventListener('click', function () {
-    if (email6.value == '' || phone6.value == '' || address6.value == '' || zip5.value == '') {
-        alert('Please Fill-Up The Form');
-        order6.setAttribute('disabled', true);
-    } else {
-        order6.removeAttribute('disabled');
-        confirm6.style.display = 'block';
-        details6.style.display = 'none';
-        this.style.display = 'none';
-    }
+    // if (email6.value == '' || phone6.value == '' || address6.value == '' || zip5.value == '') {
+    //     alert('Please Fill-Up The Form');
+    //     order6.setAttribute('disabled', true);
+    // } else {
+    //     order6.removeAttribute('disabled');
+    //     confirm6.style.display = 'block';
+    //     details6.style.display = 'none';
+    //     this.style.display = 'none';
+    // }
 });
 zip6.addEventListener('keyup', function () {
     order6.removeAttribute('disabled');
