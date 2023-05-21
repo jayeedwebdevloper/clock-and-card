@@ -708,79 +708,83 @@
                                         <h6 class="pt-2">Delivery fees $ <span id="fee5">40</span></h6>
                                         <h4 class="pt2">Total $ <span id="total5"></span></h4>
                                         <button id="order5" class="btn btn-success my-margin" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal">Order
-                                            Now</button>
+                                            data-bs-target="#order5Modal">Order Now</button>
 
-                                        <div class="modal fade" id="exampleModal" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal fade" id="order5Modal" tabindex="-1"
+                                            aria-labelledby="order5ModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Give Your
+                                                        <h1 class="modal-title fs-5" id="order5ModalLabel">Give Your
                                                             Address
                                                         </h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <div id="confirm5">
-                                                            <h3 class="text-success text-center">Your Order Successfully
-                                                                Received
-                                                            </h3>
-                                                            <h5 class="text-danger text-center">Thank You</h5>
+                                                        <div>
+                                                            <div id="confirm5">
+                                                                <h3 class="text-success text-center">Your Order
+                                                                    Successfully
+                                                                    Received
+                                                                </h3>
+                                                                <h5 class="text-danger text-center">Thank You</h5>
+                                                            </div>
+                                                            <div id="orderD5">
+                                                                <form class="row g-3">
+                                                                    <div class="col-md-6">
+                                                                        <label for="inputEmail5"
+                                                                            class="form-label">Email</label>
+                                                                        <input type="email" class="form-control"
+                                                                            id="inputEmail5">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label for="phone5" class="form-label">Phone
+                                                                            Number</label>
+                                                                        <input type="number" class="form-control"
+                                                                            id="phone5">
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <label for="inputAddress5"
+                                                                            class="form-label">Address</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputAddress5"
+                                                                            placeholder="1234 Main St">
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <label for="inputAddress2"
+                                                                            class="form-label">Address 2</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputAddress2"
+                                                                            placeholder="Apartment, studio, or floor">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label for="inputCity5"
+                                                                            class="form-label">City</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputCity5">
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <label for="inputState5"
+                                                                            class="form-label">State</label>
+                                                                        <select id="inputState5" class="form-select">
+                                                                            <option selected>Choose...</option>
+                                                                            <option>NY</option>
+                                                                            <option>IN</option>
+                                                                            <option>CY</option>
+                                                                            <option>ZN</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <label for="inputZip5"
+                                                                            class="form-labe5">Zip</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputZip5">
+                                                                    </div>
+                                                                </form>
+                                                            </div>
                                                         </div>
-                                                        <div id="orderD5">
-                                                            <form class="row g-3">
-                                                                <div class="col-md-6">
-                                                                    <label for="inputEmail5"
-                                                                        class="form-label">Email</label>
-                                                                    <input type="email" class="form-control"
-                                                                        id="inputEmail5">
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <label for="phone5" class="form-label">Phone
-                                                                        Number</label>
-                                                                    <input type="number" class="form-control"
-                                                                        id="phone5">
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <label for="inputAddress5"
-                                                                        class="form-label">Address</label>
-                                                                    <input type="text" class="form-control"
-                                                                        id="inputAddress5" placeholder="1234 Main St">
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <label for="inputAddress2"
-                                                                        class="form-label">Address 2</label>
-                                                                    <input type="text" class="form-control"
-                                                                        id="inputAddress2"
-                                                                        placeholder="Apartment, studio, or floor">
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <label for="inputCity5"
-                                                                        class="form-label">City</label>
-                                                                    <input type="text" class="form-control"
-                                                                        id="inputCity5">
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <label for="inputState5"
-                                                                        class="form-label">State</label>
-                                                                    <select id="inputState5" class="form-select">
-                                                                        <option selected>Choose...</option>
-                                                                        <option>NY</option>
-                                                                        <option>IN</option>
-                                                                        <option>CY</option>
-                                                                        <option>ZN</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-md-2">
-                                                                    <label for="inputZip5"
-                                                                        class="form-labe5">Zip</label>
-                                                                    <input type="text" class="form-control"
-                                                                        id="inputZip5">
-                                                                </div>
-                                                            </form>
-                                                        </div>
+
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
@@ -838,79 +842,84 @@
                                         <h6 class="pt-2">Delivery fees $ <span id="fee6">40</span></h6>
                                         <h4 class="pt2">Total $ <span id="total6"></span></h4>
                                         <button id="order6" class="btn btn-success my-margin" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal">Order
+                                            data-bs-target="#order6Modal">Order
                                             Now</button>
 
-                                        <div class="modal fade" id="exampleModal" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal fade" id="order6Modal" tabindex="-1"
+                                            aria-labelledby="order6ModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Give Your
+                                                        <h1 class="modal-title fs-5" id="order6ModalLabel">Give Your
                                                             Address
                                                         </h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <div id="confirm6">
-                                                            <h3 class="text-success text-center">Your Order Successfully
-                                                                Received
-                                                            </h3>
-                                                            <h5 class="text-danger text-center">Thank You</h5>
+                                                        <div>
+                                                            <div id="confirm6">
+                                                                <h3 class="text-success text-center">Your Order
+                                                                    Successfully
+                                                                    Received
+                                                                </h3>
+                                                                <h5 class="text-danger text-center">Thank You</h5>
+                                                            </div>
+                                                            <div id="orderD6">
+                                                                <form class="row g-3">
+                                                                    <div class="col-md-6">
+                                                                        <label for="inputEmail6"
+                                                                            class="form-label">Email</label>
+                                                                        <input type="email" class="form-control"
+                                                                            id="inputEmail6">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label for="phone6" class="form-label">Phone
+                                                                            Number</label>
+                                                                        <input type="number" class="form-control"
+                                                                            id="phone6">
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <label for="inputAddress6"
+                                                                            class="form-label">Address</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputAddress6"
+                                                                            placeholder="1234 Main St">
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <label for="inputAddress2"
+                                                                            class="form-label">Address 2</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputAddress2"
+                                                                            placeholder="Apartment, studio, or floor">
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label for="inputCity6"
+                                                                            class="form-label">City</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputCity6">
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <label for="inputState6"
+                                                                            class="form-label">State</label>
+                                                                        <select id="inputState6" class="form-select">
+                                                                            <option selected>Choose...</option>
+                                                                            <option>NY</option>
+                                                                            <option>IN</option>
+                                                                            <option>CY</option>
+                                                                            <option>ZN</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <label for="inputZip6"
+                                                                            class="form-label">Zip</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputZip6">
+                                                                    </div>
+                                                                </form>
+                                                            </div>
                                                         </div>
-                                                        <div id="orderD6">
-                                                            <form class="row g-3">
-                                                                <div class="col-md-6">
-                                                                    <label for="inputEmail6"
-                                                                        class="form-label">Email</label>
-                                                                    <input type="email" class="form-control"
-                                                                        id="inputEmail6">
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <label for="phone6" class="form-label">Phone
-                                                                        Number</label>
-                                                                    <input type="number" class="form-control"
-                                                                        id="phone6">
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <label for="inputAddress6"
-                                                                        class="form-label">Address</label>
-                                                                    <input type="text" class="form-control"
-                                                                        id="inputAddress6" placeholder="1234 Main St">
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <label for="inputAddress2"
-                                                                        class="form-label">Address 2</label>
-                                                                    <input type="text" class="form-control"
-                                                                        id="inputAddress2"
-                                                                        placeholder="Apartment, studio, or floor">
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <label for="inputCity6"
-                                                                        class="form-label">City</label>
-                                                                    <input type="text" class="form-control"
-                                                                        id="inputCity6">
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <label for="inputState6"
-                                                                        class="form-label">State</label>
-                                                                    <select id="inputState6" class="form-select">
-                                                                        <option selected>Choose...</option>
-                                                                        <option>NY</option>
-                                                                        <option>IN</option>
-                                                                        <option>CY</option>
-                                                                        <option>ZN</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-md-2">
-                                                                    <label for="inputZip6"
-                                                                        class="form-label">Zip</label>
-                                                                    <input type="text" class="form-control"
-                                                                        id="inputZip6">
-                                                                </div>
-                                                            </form>
-                                                        </div>
+
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
@@ -931,9 +940,8 @@
         </div>
     </section>
 
-
-    <script src="js/index.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/test.js"></script>
 </body>
 
 </html>
