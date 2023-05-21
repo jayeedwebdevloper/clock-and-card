@@ -33,7 +33,8 @@ document.getElementById('cart6').addEventListener('click', function () {
 function close(idName, elementName) {
     document.getElementById(idName).addEventListener('click', function () {
         document.getElementById(elementName).style.display = 'none';
-    })
+    });
+
 };
 close('close1', 'product1');
 close('close2', 'product2');
@@ -42,6 +43,42 @@ close('close4', 'product4');
 close('close5', 'product5');
 close('close6', 'product6');
 
+document.getElementById('close1').addEventListener('click', function () {
+    let countMinus = document.getElementById('cart-count');
+    let number = countMinus.innerText;
+    let MNumber = Number(number) - 1;
+    countMinus.innerText = MNumber;
+});
+document.getElementById('close2').addEventListener('click', function () {
+    let countMinus = document.getElementById('cart-count');
+    let number = countMinus.innerText;
+    let MNumber = Number(number) - 1;
+    countMinus.innerText = MNumber;
+});
+document.getElementById('close3').addEventListener('click', function () {
+    let countMinus = document.getElementById('cart-count');
+    let number = countMinus.innerText;
+    let MNumber = Number(number) - 1;
+    countMinus.innerText = MNumber;
+});
+document.getElementById('close4').addEventListener('click', function () {
+    let countMinus = document.getElementById('cart-count');
+    let number = countMinus.innerText;
+    let MNumber = Number(number) - 1;
+    countMinus.innerText = MNumber;
+});
+document.getElementById('close5').addEventListener('click', function () {
+    let countMinus = document.getElementById('cart-count');
+    let number = countMinus.innerText;
+    let MNumber = Number(number) - 1;
+    countMinus.innerText = MNumber;
+});
+document.getElementById('close6').addEventListener('click', function () {
+    let countMinus = document.getElementById('cart-count');
+    let number = countMinus.innerText;
+    let MNumber = Number(number) - 1;
+    countMinus.innerText = MNumber;
+});
 
 
 // input 1
@@ -339,6 +376,106 @@ order2.addEventListener('click', function () {
 });
 zip2.addEventListener('keyup', function () {
     order2.removeAttribute('disabled');
+});
+
+// address3
+
+let email3 = document.getElementById('inputEmail3');
+let phone3 = document.getElementById('phone3');
+let address3 = document.getElementById('inputAddress3');
+let zip3 = document.getElementById('inputZip3');
+let order3 = document.getElementById('orderC3');
+let confirm3 = document.getElementById('confirm3');
+let details3 = document.getElementById('orderD3');
+
+order3.addEventListener('click', function () {
+    if (email3.value == '' || phone3.value == '' || address3.value == '' || zip3.value == '') {
+        alert('Please Fill-Up The Form');
+        order3.setAttribute('disabled', true);
+    } else {
+        order3.removeAttribute('disabled');
+        confirm3.style.display = 'block';
+        details3.style.display = 'none';
+        this.style.display = 'none';
+    }
+});
+zip3.addEventListener('keyup', function () {
+    order3.removeAttribute('disabled');
+});
+
+// address4
+
+let email4 = document.getElementById('inputEmail4');
+let phone4 = document.getElementById('phone4');
+let address4 = document.getElementById('inputAddress4');
+let zip4 = document.getElementById('inputZip4');
+let order4 = document.getElementById('orderC4');
+let confirm4 = document.getElementById('confirm4');
+let details4 = document.getElementById('orderD4');
+
+order4.addEventListener('click', function () {
+    if (email4.value == '' || phone4.value == '' || address4.value == '' || zip4.value == '') {
+        alert('Please Fill-Up The Form');
+        order4.setAttribute('disabled', true);
+    } else {
+        order4.removeAttribute('disabled');
+        confirm4.style.display = 'block';
+        details4.style.display = 'none';
+        this.style.display = 'none';
+    }
+});
+zip4.addEventListener('keyup', function () {
+    order4.removeAttribute('disabled');
+});
+
+// address5
+
+let email5 = document.getElementById('inputEmail5');
+let phone5 = document.getElementById('phone5');
+let address5 = document.getElementById('inputAddress5');
+let zip5 = document.getElementById('inputZip5');
+let order5 = document.getElementById('orderC5');
+let confirm5 = document.getElementById('confirm5');
+let details5 = document.getElementById('orderD5');
+
+order5.addEventListener('click', function () {
+    if (email5.value == '' || phone5.value == '' || address5.value == '' || zip5.value == '') {
+        alert('Please Fill-Up The Form');
+        order5.setAttribute('disabled', true);
+    } else {
+        order5.removeAttribute('disabled');
+        confirm5.style.display = 'block';
+        details5.style.display = 'none';
+        this.style.display = 'none';
+    }
+});
+zip5.addEventListener('keyup', function () {
+    order5.removeAttribute('disabled');
+});
+
+// address6
+
+let email6 = document.getElementById('inputEmail6');
+let phone6 = document.getElementById('phone6');
+let address6 = document.getElementById('inputAddress6');
+let zip6 = document.getElementById('inputZip6');
+let order6 = document.getElementById('orderC6');
+let confirm6 = document.getElementById('confirm6');
+let details6 = document.getElementById('orderD6');
+
+order6.addEventListener('click', function () {
+    if (email6.value == '' || phone6.value == '' || address6.value == '' || zip5.value == '') {
+        alert('Please Fill-Up The Form');
+        order6.setAttribute('disabled', true);
+    } else {
+        order6.removeAttribute('disabled');
+        confirm6.style.display = 'block';
+        details6.style.display = 'none';
+        this.style.display = 'none';
+    }
+});
+zip6.addEventListener('keyup', function () {
+    order6.removeAttribute('disabled');
 });
 
 function addCart(buttonID, productId) {
