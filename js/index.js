@@ -464,7 +464,7 @@ let confirm6 = document.getElementById('confirm6');
 let details6 = document.getElementById('orderD6');
 
 order6.addEventListener('click', function () {
-    if (email6.value == '' || phone6.value == '' || address6.value == '' || zip5.value == '') {
+    if (email6.value == '' || phone6.value == '' || address6.value == '' || zip6.value == '') {
         alert('Please Fill-Up The Form');
         order6.setAttribute('disabled', true);
     } else {

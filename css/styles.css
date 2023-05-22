@@ -68,7 +68,12 @@ header {
     margin: 2% 0;
 }
 
-#confirm1 {
+#confirm1,
+#confirm2,
+#confirm3,
+#confirm4,
+#confirm5,
+#confirm6 {
     display: none;
 }
 
